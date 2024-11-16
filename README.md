@@ -25,7 +25,7 @@ Circuit diagram of presented controller can be seen below:
 General method of attaching SCT-013-005 AC current sensor to the power line can be seen below (drawing curtuasy of Murky Robot):
 
 <p align="center">
-<img src="./img/sct-013-esquema-electrico.png" width="600" height="400"/>
+<img src="./img/sct-013-esquema-electrico.png" width="400" height="200"/>
 </p> 
 
 Due to the switching power supply of the PC monitor, the output signal from the AC current sensor (SCT-013-005) consists of pulses with an amplitude of approximately ±100 mV and a frequency of 50 Hz. 
