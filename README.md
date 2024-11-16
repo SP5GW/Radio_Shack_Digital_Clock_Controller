@@ -1,4 +1,4 @@
-# PC Monitor Status Detector
+# Radioshack digital clock controller
 
 ## Purpose of the project
 
@@ -15,6 +15,12 @@ Next, the focus shifted to HDMI interface and possibity to build hardware status
 Selected solution is based on AC current sensor, which detects increase in PC monitor power consumption, this increase can be associated with the monitor getting into active state. Solution is implemented in harware only.
 
 ## Operation description
+
+Circuit diagram of presented controller can be seen below:
+
+<p align="center">
+<img src="./img/Schematics.png" width="1000" height="600"/>
+</p> 
 
 Due to the switching power supply of the PC monitor, the output signal from the AC current sensor (SCT-013-005) consists of pulses with an amplitude of approximately ±100 mV and a frequency of 50 Hz. 
 
