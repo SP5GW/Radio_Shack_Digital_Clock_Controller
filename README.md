@@ -22,6 +22,12 @@ Circuit diagram of presented controller can be seen below:
 <img src="./img/Schematics.png" width="1000" height="600"/>
 </p> 
 
+General method of attaching SCT-013-005 AC current sensor to the power line can be seen below:
+
+<p align="center">
+<img src="./img/sct-013-esquema-electrico.png" width="1000" height="600"/>
+</p> 
+
 Due to the switching power supply of the PC monitor, the output signal from the AC current sensor (SCT-013-005) consists of pulses with an amplitude of approximately ±100 mV and a frequency of 50 Hz. 
 
 Before reaching the D1/C1 rectifier, the signal from the current sensor is amplified by the op-amp U2A (LM358) configured as a non-inverting amplifier, the gain of this stage is determined by resistors R3 and R4. With R3 = 38 kΩ and R4 = 1 kΩ, the gain is calculated as:
