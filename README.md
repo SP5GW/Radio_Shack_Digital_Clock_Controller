@@ -113,3 +113,5 @@ Below are a few pictures showcasing the practical implementation of the radiosha
 [3] [4093B Quad 2-input NAND Shmitt triggers  datasheet](./doc/cd4093b.pdf)
 
 [4] [Analog Engineer's Circuit Cookbook: Amplifiers, Texas Instruments](./doc/slyy137d.pdf)
+
+[5] [Relay module 1 channel with optoisolation - 10A/250VAC contacts 5V coil](https://botland.store/relays/1997-relay-module-1-channel-with-optoisolation--5904422359096.html)
