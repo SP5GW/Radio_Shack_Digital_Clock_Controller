@@ -48,7 +48,13 @@ Resistor R1 is included to prevent the output voltage of U2A from spiking to its
 
 R1 should be significantly larger than the internal reference resistor of the current sensor to avoid affecting the sensor's output voltage.
 
-DC voltage from the rectifier is compared to the reference voltage using op-amp U2B, configured as an inverting comparator.
+DC voltage Uc from the rectifier is compared to the reference voltage using op-amp U2B, configured as an inverting comparator.
+
+Signal Uc (yellow curve) and coresponding signal Ub (blue curve) can be seen below:
+
+<p align="center">
+<img src="./img/HalfWaveRectifier.png" width="600" height="400"/>
+</p> 
 
 The reference voltage is set to approximately 1V using the RV1 potentiometer. This value can be reduced if the output voltage amplitude from the current sensor is significantly lower than 100 mV.
 
