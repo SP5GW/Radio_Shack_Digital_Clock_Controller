@@ -91,6 +91,16 @@ Switch SW2, when turned on, permanently activates the relay circuit, ensuring th
 LED1 (green) indicates the device is connected to the AC power line.
 LED2 (blue) lights up when the relay is activated, signifying that the clock modules are powered on.
 
+## Practical implementation
+
+Below are a few pictures showcasing the practical implementation of the radioshack digital clock controller:
+
+<p align="center">
+<img src="./img/front.jpg" width="400" height="200"/>
+<img src="./img/internals.jpg" width="400" height="200"/>
+<img src="./img/back.jpg" width="400" height="200"/>
+</p> 
+
 
 # References
 
