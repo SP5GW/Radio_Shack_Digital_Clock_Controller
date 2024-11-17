@@ -96,9 +96,9 @@ LED2 (blue) lights up when the relay is activated, signifying that the clock mod
 Below are a few pictures showcasing the practical implementation of the radioshack digital clock controller:
 
 <p align="center">
-<img src="./img/front.jpg" width="400" height="200"/>
-<img src="./img/internals.jpg" width="400" height="200"/>
-<img src="./img/back.jpg" width="400" height="200"/>
+<img src="./img/front.jpg" width="400" height="300"/>
+<img src="./img/internals.jpg" width="400" height="300"/>
+<img src="./img/back.jpg" width="400" height="300"/>
 </p> 
 
 
