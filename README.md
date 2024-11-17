@@ -60,10 +60,14 @@ Resistor R1 is added to allow capacitor C1 to discharge when the PC monitor tran
 
 The signal from comparator U2B is inverted by the Schmitt trigger NAND gate U3A (4093) (voltage Ue) and then controls an RC circuit that introduces a delay adjustable from 0 to 6 seconds using potentiometer RV2. Diode D2 allows for immediate capacitor C2 discharge whenever U3A output goes to low state, resulting in no delay in clock power off as soon as monitor is disconnected or put into sleep (voltage Uf).
 
-Voltages Ue and Uf are shown in equivalent RC circuit (R=100k and C = 10uF) for scenarios with and without diode D2. In case of picture below the square wave is used as Uf:
+Voltages Ue (blue curve) and Uf (yellow curve) are shown in equivalent RC circuit (R=100k and C = 10uF) for scenarios with and without diode D2. In case of picture below the square wave is used as Uf:
+Scneario when diode D2 is not used:
 
 <p align="center">
 <img src="./img/Delay_RC_10u100k_without_diode.png" width="600" height="400"/>
+</p> 
+Scenario when diode D2 is part of the circuit:
+<p align="center">
 <img src="./img/Delay_RC_10u100k_with_diode.png" width="600" height="400"/>
 </p> 
 
