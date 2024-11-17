@@ -32,11 +32,11 @@ Due to the switching power supply of the PC monitor, the output signal Ua from t
 
 Before reaching the D1/C1 rectifier, the signal from the current sensor is amplified by the op-amp U2A (LM358) configured as a non-inverting amplifier, the gain of this stage is determined by resistors R3 and R4. With R3 = 38 kΩ and R4 = 1 kΩ, the gain is calculated as:
 
-$G = 1 + (R3/R2) = 1 + (38k/1k) = 39$
+$G = 1 + \frac{R3}{R2} = 1 + \frac{38k}{1k} = 39$
 
 The gain level of U2A is selected to produce output voltage well above forward diode D1 drop voltage of about 0.6V. In our case the amplitude of U2A output voltage Ub is:
 
-$Ub = G * Ua = 39* 0.1V = 3.9V$
+$Ub = G * Ua = 39 * 0.1V = 3.9V$
 
 Signals Ua and Ub are shown on the picture below (Ua - blue curve, Ub - yellow curve):
 
@@ -61,12 +61,15 @@ Resistor R1 is added to allow capacitor C1 to discharge when the PC monitor tran
 The signal from comparator U2B is inverted by the Schmitt trigger NAND gate U3A (4093) (voltage Ue) and then controls an RC circuit that introduces a delay adjustable from 0 to 6 seconds using potentiometer RV2. Diode D2 allows for immediate capacitor C2 discharge whenever U3A output goes to low state, resulting in no delay in clock power off as soon as monitor is disconnected or put into sleep (voltage Uf).
 
 Voltages Ue (blue curve) and Uf (yellow curve) are shown in equivalent RC circuit (R=100k and C = 10uF) for scenarios with and without diode D2. In case of picture below the square wave is used as Uf:
+
 Scneario when diode D2 is not used:
 
 <p align="center">
 <img src="./img/Delay_RC_10u100k_without_diode.png" width="600" height="400"/>
 </p> 
+
 Scenario when diode D2 is part of the circuit:
+
 <p align="center">
 <img src="./img/Delay_RC_10u100k_with_diode.png" width="600" height="400"/>
 </p> 
