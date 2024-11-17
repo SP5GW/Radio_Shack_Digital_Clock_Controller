@@ -10,6 +10,8 @@ This project addresses a practical need: controlling the power supply to radio s
 
 To prevent the clocks from turning off during brief monitor blackouts—such as dark scenes, temporary disconnections, or sleep mode—a delay timer has been integrated. This timer allows for short interruptions to be ignored, ensuring consistent and reliable operation.
 
+**Warning: This project involves working with AC power lines, which can be extremely dangerous. If you are not a certified electrician, seek professional assistance. Mishandling electricity can result in severe injury or death. Proceed with this project at your own risk.**
+
 ## Design challanges
 
 Initially, the focus was on detecting the monitor's state through software, which could then control the hardware powering the clocks. However, it quickly became evident that reliably detecting the monitor's status—especially on Windows—was challenging, if not impossible. Despite numerous online discussions addressing this issue, all examined implementations proved unreliable.
