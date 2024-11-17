@@ -1,5 +1,9 @@
 # Radioshack digital clock controller
 
+<p align="center">
+<img src="./img/Frontpage.jpg" width="1000" height="600"/>
+</p> 
+
 ## Purpose of the project
 
 This project addresses a practical need: controlling the power supply to radio shack real-time clocks based on the status of a PC monitor. The goal is to synchronize the clocks' power state with the monitor, ensuring they turn on and off appropriately.
