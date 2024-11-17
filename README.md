@@ -107,6 +107,9 @@ Below are a few pictures showcasing the practical implementation of the radiosha
 # References
 
 [1] [Split core current transformer SCT013-005 datasheet](./doc/SCT013-005-0-5A-0-1V.pdf)
+
 [2] [LM358 Dual operation amplifier datasheet](./doc/lm358-557592.pdf)
+
 [3] [4093B Quad 2-input NAND Shmitt triggers  datasheet](./doc/cd4093b.pdf)
+
 [4] [Analog Engineer's Circuit Cookbook: Amplifiers, Texas Instruments](./doc/slyy137d.pdf)
