@@ -41,7 +41,7 @@ $Ub = G * Ua = 39* 0.1V = 3.9V$
 Signals Ua and Ub are shown on the picture below (Ua - blue curve, Ub - yellow curve):
 
 <p align="center">
-<img src="./img/initial_amplification_stage.png" width="400" height="200"/>
+<img src="./img/initial_amplification_stage.png" width="600" height="400"/>
 </p> 
 
 Resistor R1 is included to prevent the output voltage of U2A from spiking to its maximum value when the current sensor is disconnected. When the sensor is connected, its internal resistor pulls the op-amp’s non-inverting input to ground. Without R1, disconnecting the sensor would leave the op-amp’s non-inverting input floating.
@@ -58,7 +58,14 @@ When the PC monitor is disconnected or in sleep mode, the DC voltage at the rect
 
 Resistor R1 is added to allow capacitor C1 to discharge when the PC monitor transitions from an active state to a disconnected state, i.e. without R1, the rectifier output voltage would remain high even after the PC monitor enters sleep mode or is disconnected.
 
-The signal from comparator U2B is inverted by the Schmitt trigger NAND gate U3A (4093) and then controls an RC circuit that introduces a delay adjustable from 0 to 6 seconds using potentiometer RV2. Diode D2 allows for immediate capacitor C2 discharge whenever U3A output goes to low state, resulting in no delay in clock power off as soon as monitor is disconnected or put into sleep.
+The signal from comparator U2B is inverted by the Schmitt trigger NAND gate U3A (4093) (voltage Ue) and then controls an RC circuit that introduces a delay adjustable from 0 to 6 seconds using potentiometer RV2. Diode D2 allows for immediate capacitor C2 discharge whenever U3A output goes to low state, resulting in no delay in clock power off as soon as monitor is disconnected or put into sleep (voltage Uf).
+
+Voltages Ue and Uf are shown in equivalent RC circuit (R=100k and C = 10uF) for scenarios with and without diode D2. In case of picture below the square wave is used as Uf:
+
+<p align="center">
+<img src="./img/Delay_RC_10u100k_without_diode.png" width="600" height="400"/>
+<img src="./img/Delay_RC_10u100k_with_diode.png" width="600" height="400"/>
+</p> 
 
 Output voltage from RC circuit is inverted back by NAND gate U3B and then together with signal from push button SW2 steers NAND gates U3C/U3D, which control relay circuit activated by TTL low state.
 
